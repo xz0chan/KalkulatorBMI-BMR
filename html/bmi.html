@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <title>Kalkulator BMI</title>
+    <script src="../js/script.js"></script>
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+  </head>
+  <body>
+    <div class="container">
+      <div class="banner">
+        <img src="../img/banner.jpg" alt="baner" width="100%" />
+      </div>
+      <div class="menu">
+        <a href="../index.html">Strona Główna</a>
+        <a href="bmi.html">Kalkulator BMI</a>
+        <a href="kal.html">Kalkulator kalorii</a>
+      </div>
+      <div class="content-bmi">
+        <div class="content-bmi-1">
+          <h3>Co to kalkulator BMI?</h3>
+          <p>
+            Kalkulator BMI jest narzędziem, które mówi, czy ważymy odpowiednio
+            do swojego wzrostu. Jest bardzo prosty w obsłudze, a normy pozwalają
+            na jednoznaczną interpretację wyników. W czasach, gdy nadmierna
+            troska o sylwetkę staje się problemem społecznym, kalkulator BMI
+            jest wiarygodnym wyznacznikiem prawidłowej wagi.
+          </p>
+          <h3>Możemy go obliczyć za pomocą kalkulatora:</h3>
+        </div>
+        <div class="content-bmi-2"> 
+          <form name="bmiForm">
+              Waga (kg):  <input type="text" name="weight" size="10" class="text" />
+              Wzrost (cm): 
+              <input type="text" name="height" size="10" class="text" />
+            <input
+              type="button"
+              value="Oblicz"
+              onClick="calculateBmi()"
+              class="button"
+            />
+            <input type="reset" value="Wyzeruj" class="button" onClick="resetBMI()" /></br>
+            <div id="bmi"></div> </br>
+            <div id="meaning"></div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>Wszelkie prawa zastrzeżone</p>
+    </div>
+  </body>
+</html>

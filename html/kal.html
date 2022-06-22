@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../style/style.css" />
+    <title>Kalkulator BMR</title>
+    <script src="../js/script.js"></script>
+    <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+  </head>
+  <body>
+    <div class="container">
+      <div class="banner">
+        <img src="../img/banner.jpg" alt="baner" width="100%" />
+      </div>
+      <div class="menu">
+        <a href="../index.html">Strona Główna</a>
+        <a href="bmi.html">Kalkulator BMI</a>
+        <a href="kal.html">Kalkulator BMR</a>
+      </div>
+      <div class="content-kal">
+        <div class="content-kal-1">
+         <h3>BMR: co to jest?</h3>
+         <p>całkowitego dziennego zapotrzebowania kalorycznego człowieka (inaczej zapotrzebowania energetycznego lub przemiany materii), które jest potrzebne, aby utrzymywać organizm w zdrowiu. Wartość obliczana przez ten kalkulator jest specjalnym wskaźnikiem wykorzystywanym w dietetyce. Pomaga indywidualnie ustalić zalecaną kaloryczność diety, aby utrzymać aktualną masę ciała. Kalkulator kalorii jest zazwyczaj wykorzystywany przez osoby, które chciałyby utrzymać swoją masę ciała, zwiększyć ją lub osiągnąć wyznaczony cel zdrowotny.</p>
+        </div>
+        <div class="content-kal-2"> 
+          <h3>Kalkulator kaloryczności:</h3>
+          
+          <form name="kalForm">
+           <b> Płeć:</b>
+              <div class="form-1">Kobieta   <input type="radio" name="option" id="sexF" autocomplete="off" /></div>
+              Mężczyzna <input type="radio" name="option" id="sexM"  autocomplete="off" />
+            </br></br>
+              <b>Masa ciała (kg)</b>  <input type="number" name="weight" size="10" class="text" />
+             <b> Wzrost (cm)   </b>   <input type="number" name="height" size="10" class="text" id="height"/>
+             <b> Wiek  </b>           <input type="number" name="age" size="10" class="text" id="age"/>
+            </br></br>
+              <b>Aktywność fizyczna</b>
+              <select name="activity" class="text" id="activity">
+                <option>Wybierz</option>
+                <option value="1">Ćwiczę niewiele lub wcale</option>
+                <option value="2">Ćwiczę umiarkowanie (1 - 3 razy w tygodniu)</option>
+                <option value="3">Ćwiczę dość intensywnie (3 - 5 razy w tygodniu)</option>
+                <option value="4">Ćwiczę ciężko (6 - 7 razy w tygodniu)</option>
+                <option value="5">Ćwiczę bardzo ciężko (praca fizyczna lub ćwiczenia 2 razy dziennie) </option>
+              </select>
+            </br>
+            <input
+              type="button"
+              value="Oblicz"
+              onClick="calculateKal()"
+              class="button"
+            />
+            <input type="reset" value="Wyzeruj" class="button" onClick="resetBMR()" /></br>
+            <div id="wynik"></div>
+          </form>
+        
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <p>Wszelkie prawa zastrzeżone</p>
+    </div>
+  </body>
+</html>
